@@ -1,6 +1,6 @@
 import pickle
 import streamlit as st
-kn_classifier = pickle.load(open('D:\Downloads\Tri-NIT Hackathon\Crop_Prediction.pk1','rb'))
+kn_classifier = pickle.load(open('Crop_Prediction.pk1','rb'))
 
 def crop_prediction(input_data):
     newdata=kn_classifier.predict([input_data])
